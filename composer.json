@@ -1,0 +1,32 @@
+{
+    "name": "akturis/seat-winfleet",
+    "description": "Plugin to gamble prizes for fleet member",
+    "type": "seat-plugin",
+    "license": "GPL-2.0-only",
+    "authors": [
+        {
+            "name": "Akturis",
+            "email": "akturis@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "autoload": {
+        "psr-4": {
+            "Seat\\Akturis\\WinFleet\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Seat\\Akturis\\WinFleet\\WinFleetServiceProvider"
+            ]
+        }
+    },
+    "require": {
+        "kassie/calendar": "^3.0",
+        "eveseat/services": "^3.0",
+        "eveseat/eveapi": "^3.0",
+        "eveseat/web": "^3.0",
+        "eveseat/notifications": "^3.0"
+    }
+}
